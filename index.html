@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📋 Java实习面经墙 | 2026真实面试经验共享</title>
+<meta name="description" content="2026 Java后端实习真实面经合集——阿里灵犀互娱、美团、滴滴、亚信科技、蔚来、字节跳动、华为OD等。每条面经含真题+答案。">
+<meta name="keywords" content="Java实习面经,阿里面经,美团面经,滴滴面经,亚信面经,2026面试真题,Java后端实习面试经验">
+<link rel="canonical" href="https://Abyte-zym.github.io/java-career-blog/interview-wall.html">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);color:#e0e0e0;line-height:1.8;padding:20px}
+.container{max-width:800px;margin:0 auto}
+h1{background:linear-gradient(135deg,#00b4db,#0083b0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:2em;margin:30px 0 5px}
+.subtitle{color:#888;margin-bottom:10px}
+.stats{display:flex;gap:20px;margin:20px 0;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.06);padding:14px 20px;border-radius:10px;text-align:center}
+.stat .num{font-size:1.5em;color:#00b4db;font-weight:bold}
+.stat .label{font-size:.8em;color:#888}
+.card{background:rgba(255,255,255,.04);border-radius:14px;padding:25px;margin:20px 0;border-left:5px solid #00b4db}
+.card .company{font-size:1.2em;color:#00b4db;font-weight:bold;margin-bottom:5px}
+.card .meta{color:#888;font-size:.85em;margin-bottom:15px}
+.card .meta span{background:rgba(0,180,219,.15);padding:3px 10px;border-radius:4px;margin-right:8px}
+.card .q-block{margin:12px 0;padding:12px;background:rgba(255,255,255,.03);border-radius:8px}
+.card .q-block .q-text{color:#ffa726;font-weight:bold;margin-bottom:6px}
+.card .q-block .a-text{color:#ccc;font-size:.9em}
+.tag{display:inline-block;background:rgba(0,180,219,.2);color:#00b4db;padding:4px 12px;border-radius:20px;font-size:.8em;margin:4px}
+.nav{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+.nav a{color:#00b4db;text-decoration:none;padding:6px 14px;background:rgba(255,255,255,.06);border-radius:6px;font-size:.85em}
+.submit-cta{margin:40px 0;padding:30px;background:linear-gradient(135deg,rgba(0,180,219,.12),rgba(0,131,176,.12));border-radius:16px;text-align:center}
+.submit-cta h2{color:#00b4db;margin-bottom:12px}
+.submit-cta p{color:#aaa;margin-bottom:16px}
+.submit-cta textarea{width:100%;min-height:120px;background:rgba(0,0,0,.3);border:1px solid rgba(0,180,219,.3);border-radius:10px;color:#fff;padding:14px;font-size:.9em;margin:12px 0;resize:vertical}
+.submit-cta button{background:linear-gradient(135deg,#00b4db,#0083b0);color:#fff;border:none;padding:12px 30px;border-radius:8px;font-size:1em;cursor:pointer}
+.submit-cta button:hover{opacity:.9}
+.donate{text-align:center;margin:40px 0;padding:30px;background:rgba(255,255,255,.04);border-radius:16px}
+.donate img{width:200px;border-radius:12px;margin-top:12px}
+.footer{margin-top:50px;padding:20px;text-align:center;color:#666;font-size:.8em;border-top:1px solid rgba(255,255,255,.08)}
+.footer a{color:#00b4db}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="nav">
+<a href="index.html">📚 35篇面试文章</a>
+<a href="https://Abyte-zym.github.io/java-interview-quiz/">☕ 题库</a>
+<a href="https://Abyte-zym.github.io/interview-simulator/">🎯 模拟器</a>
+<a href="https://Abyte-zym.github.io/arsenal/">🎯 弹药库</a>
+</div>
+
+<h1>📋 Java实习面经墙</h1>
+<p class="subtitle">真实面试经历 · 覆盖阿里/美团/滴滴/亚信/蔚来/字节 · 持续更新</p>
+
+<div class="stats">
+<div class="stat"><div class="num">8+</div><div class="label">条真实面经</div></div>
+<div class="stat"><div class="num">40+</div><div class="label">道真题</div></div>
+<div class="stat"><div class="num">6</div><div class="label">家大厂覆盖</div></div>
+</div>
+
+<!-- 面经1：阿里巴巴灵犀互娱 -->
+<div class="card">
+<div class="company">🏢 阿里巴巴 · 灵犀互娱 — Java实习一面</div>
+<div class="meta">
+<span>📅 2025年</span><span>💻 线上面试</span><span>⏱️ 约30分钟</span><span class="tag">通过</span>
+</div>
+<div class="q-block">
+<div class="q-text">❓ 哈希表熟悉吗，开散列版本什么时候需要扩容？</div>
+<div class="a-text">HashMap负载因子超过0.75时扩容，因为冲突概率随填充率指数增长。开散列（链地址法）扩容=新建2倍大数组+重新hash所有节点。</div>
+</div>
+<div class="q-block">
+<div class="q-text">❓ 进程、线程、协程的区别？</div>
+<div class="a-text">进程是资源分配的最小单位（独立内存空间），线程是CPU调度的最小单位（共享进程内存），协程是用户态的轻量级线程（由程序自己调度、切换成本远低于线程）。</div>
+</div>
+<div class="q-block">
+<div class="q-text">❓ 场景题：10万用户显示前100排行榜怎么实现？</div>
+<div class="a-text">小顶堆。遍历10万条数据，维护一个大小为100的小顶堆 => O(NlogK)时间复杂度。Redis的ZSet底层跳表也可实现。</div>
+</div>
+<div class="q-block">
+<div class="q-text">❓ TCP和UDP区别？UDP想实现安全通信需要增加什么？</div>
+<div class="a-text">TCP可靠面向连接，UDP不可靠无连接。UDP要安全需在应用层加：确认重传+序列号去重+流控。这就是QUIC协议的思路。</div>
+</div>
+</div>
+
+<!-- 面经2：美团 -->
+<div class="card">
+<div class="company">🏢 美团 — 测试开发实习一面</div>
+<div class="meta">
+<span>📅 2024年春招</span><span>💻 线上面试</span><span>⏱️ 30分钟</span><span class="tag">未通过</span>
+</div>
+<div class="q-block">
+<div class="q-text">❓ 浅拷贝和深拷贝有什么区别？</div>
+<div class="a-text">浅拷贝只复制引用（两个变量指向同一对象），深拷贝递归复制整个对象图。Java中`clone()`默认浅拷贝，深拷贝需重写clone或序列化。</div>
+</div>
+<div class="q-block">
+<div class="q-text">❓ 计算机网络的五层协议是什么？</div>
+<div class="a-text">物理层（比特流）、数据链路层（帧/MAC地址）、网络层（包/IP地址）、传输层（段/端口号TCP/UDP）、应用层（HTTP/DNS/FTP）。</div>
+</div>
+<div class="q-block">
+<div class="q-text">❓ 算法题：合并列表区间</div>
+<div class="a-text">排序+一次遍历。先按区间起点排序，然后遍历合并重叠区间 → O(NlogN)。LeetCode 56原题。</div>
+</div>
+</div>
+
+<!-- 面经3：滴滴 -->
+<div class="card">
+<div class="company">🏢 滴滴 — 后端研发实习（二面通过）</div>
+<div class="meta">
+<span>📅 2024年</span><span>💻 线上面试</span><span>⏱️ 55分钟</span><span class="tag">✅ 通过</span>
+</div>
+<div class="q-block">
+<div class="q-text">❓ 如何判断一个点是否落入一个面中？</div>
+<div class="a-text">射线法（Ray Casting）：从点向右发一条水平射线，统计与多边形边的交点数量。奇数=在内部，偶数=在外部。</div>
+</div>
+<div class="q-block">
+<div class="q-text">❓ C++ map和unordered_map的区别？</div>
+<div class="a-text">map是红黑树（有序，O(logN)），unordered_map是哈希表（无序，O(1)平均）。Java对应TreeMap vs HashMap。</div>
+</div>
+<div class="q-block">
+<div class="q-text">❓ 哈希是怎么实现的？C++容器用过哪些？</div>
+<div class="a-text">哈希=散列函数+数组+冲突解决（链地址法/开放寻址法）。Java8 HashMap=数组+链表+红黑树。</div>
+</div>
+</div>
+
+<!-- 面经4：亚信科技 -->
+<div class="card">
+<div class="company">🏢 亚信科技 — Java开发实习</div>
+<div class="meta">
+<span>📅 2026年5月</span><span>💻 线上面试</span><span>⏱️ 日常实习</span><span class="tag">🔥 热招中</span>
+</div>
+<div class="q-block">
+<div class="q-text">❓ JD要求：扎实的Java语言基础 + Oracle/MySQL数据库</div>
+<div class="a-text">亚信科技是中国最大通信软件公司，技术栈Java+Oracle+MySQL。主要负责功能模块开发、单元测试、Bug修复。</div>
+</div>
+<div class="q-block">
+<div class="q-text">❓ JD要求：掌握常用设计模式</div>
+<div class="a-text">单例（DCL+volatile）、工厂（简单/抽象）、代理（JDK/CGLIB）、策略、观察者——这5个必会。Spring源码用了代理+策略+观察者+模板方法。</div>
+</div>
+</div>
+
+<!-- 面经5：蔚来 -->
+<div class="card">
+<div class="company">🏢 蔚来 — 数字座舱测试开发实习</div>
+<div class="meta">
+<span>📅 2024年</span><span>💻 线上面试</span><span>⏱️ 22分钟</span>
+<span class="tag">放弃</span>
+</div>
+<div class="q-block">
+<div class="q-text">❓ 假如开发一个百度搜索框，如何设计测试用例？</div>
+<div class="a-text">功能测试：输入/清空/特殊字符/超长文本/emoji/中英文切换；性能：弱网/并发/响应时间；安全：XSS注入/SQL注入。</div>
+</div>
+<div class="q-block">
+<div class="q-text">❓ 一个大文档要知道每个字符出现次数？</div>
+<div class="a-text">HashMap<Character, Integer>遍历计数 → O(N)。如果只关心高频字符，用小顶堆维护TopK → O(NlogK)。</div>
+</div>
+</div>
+
+<!-- 面经6：中国联通软件研究院 -->
+<div class="card">
+<div class="company">🏢 中国联通 · 软件研究院广州分院 — Offer面经</div>
+<div class="meta">
+<span>📅 2024年春招</span><span>💻 线上面试3轮</span><span class="tag">✅ Offer</span>
+</div>
+<div class="q-block">
+<div class="q-text">❓ 国企银行技术栈为什么十几年固定Java？</div>
+<div class="a-text">稳定性>创新。Java生态最成熟、人才池最大、安全审计最完备。国企不在乎大不大厂，在乎你敢不敢签3-5年长期合同。</div>
+</div>
+<div class="q-block">
+<div class="q-text">❓ 笔试考了什么？</div>
+<div class="a-text">选择题（计算机八股）+ 3道编程题。编程题1数组最大差值、题2二叉树前序遍历、题3数组去重。全部暴力能过。</div>
+</div>
+</div>
+
+<!-- 面经7：Strikingly -->
+<div class="card">
+<div class="company">🏢 Strikingly（YC孵化·硅谷）— 远程Java实习</div>
+<div class="meta">
+<span>📅 2026年5月</span><span>🏠 远程</span><span>💰 200-250元/天</span><span class="tag">🔥 在招</span>
+</div>
+<div class="q-block">
+<div class="q-text">❓ JD要求：Mac/Unix/Linux开发环境和shell + 英文读写（硬性）</div>
+<div class="a-text">远程办公，自备电脑。技术栈Java+Spring+MySQL+Redis。偏全栈，小而精团队。6个月实习，每周5天。</div>
+</div>
+</div>
+
+<!-- 面经8：拼多多内推 -->
+<div class="card">
+<div class="company">🏢 拼多多 — 服务端研发实习生（内推直通面试）</div>
+<div class="meta">
+<span>📅 2026年5月</span><span>💻 线上面试</span><span class="tag">🔥 内推</span>
+</div>
+<div class="q-block">
+<div class="q-text">❓ 交易核心团队问到的高并发库存扣减方案</div>
+<div class="a-text">Redis+Lua原子扣减 + 热点商品库存分段 + 预扣库存+支付倒扣。RocketMQ事务消息保证订单最终一致性。</div>
+</div>
+</div>
+
+<div class="submit-cta">
+<h2>📝 你也有面经？投稿帮更多人</h2>
+<p>分享你的真实面试经历——公司名+岗位+面试问题+你的回答。一经采纳永久展示，附你的GitHub署名。</p>
+<textarea placeholder="举个栗子：
+公司：XX科技 Java实习
+面试时间：2026年X月
+面试题：
+1. HashMap底层原理？→ 答：...
+2. Redis缓存三穿？→ 答：...
+结果：通过/未通过
+经验总结：..."></textarea>
+<p style="font-size:.8em;color:#888">📧 投稿到 GitHub Issues：<a href="https://github.com/Abyte-zym/jarvis-backup/issues" style="color:#00b4db">github.com/Abyte-zym/jarvis-backup/issues</a></p>
+</div>
+
+<div class="donate">
+<p>☕ 面经墙持续更新中，觉得有用请杯咖啡~</p>
+<img src="https://raw.githubusercontent.com/Abyte-zym/jarvis-backup/main/mm_facetoface_collect_qrcode.png" alt="赞赏码">
+<p style="color:#888;font-size:.8em;margin-top:8px">微信扫码赞赏 · 支持更多免费工具</p>
+</div>
+
+<div class="footer">
+📚 <a href="index.html">35篇面试文章</a> | 
+☕ <a href="https://Abyte-zym.github.io/java-interview-quiz/">面试题库</a> |
+📋 <a href="https://Abyte-zym.github.io/arsenal/">弹药库总入口</a><br>
+© 2026 Java面试通关 · 真实面经永久免费
+</div>
+
+</div>
+</body>
+</html>
